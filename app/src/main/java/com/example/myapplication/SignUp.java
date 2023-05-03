@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -21,6 +22,7 @@ public class SignUp extends AppCompatActivity {
     private EditText emailedit,passwordedit,RetypepasswordEdit;
     private Button btnLogin, btnRegister;
     private FirebaseAuth auth;
+    private ProgressDialog progressDialog;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate( Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class SignUp extends AppCompatActivity {
         RetypepasswordEdit = findViewById(R.id.edtRetypePassword);
         btnLogin = findViewById(R.id.btnMoveToLogin);
         btnRegister = findViewById(R.id.btnSignUp);
+        progressDialog = new ProgressDialog(this);
 
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -71,9 +74,11 @@ public class SignUp extends AppCompatActivity {
         if(RetypePassword.equals(password)==false){
             Toast.makeText(this,"Please Input RetypePassword",Toast.LENGTH_SHORT).show();
         }else{
+            progressDialog.show();
             auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
+                    progressDialog.dismiss();
                     if(task.isSuccessful()){
                         Toast.makeText(getApplicationContext(),"Register SuccessFull",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(SignUp.this,Login.class);

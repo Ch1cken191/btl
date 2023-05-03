@@ -29,17 +29,21 @@ android:layout_height="match_parent">
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/filmName"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:text="Nguoi nghien song luong thien"
-                android:textColor="#000"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/filmName"
+                    android:maxLines="1000"
+                    android:ellipsize="end"
+                    android:text="Nguoi nghien song luong thien"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+
+
+
             <TextView
                 android:id="@+id/filmDirector"
                 android:text="Thang Hoang"

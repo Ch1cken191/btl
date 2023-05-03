@@ -16,15 +16,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".SignUp">
-        </activity>
+            android:name=".Profile"
+            android:exported="false" />
+        <activity android:name=".SignUp"></activity>
         <activity
             android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -40,7 +43,6 @@
             android:name=".FilmVideo"
             android:exported="true"
             android:screenOrientation="landscape">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
