@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background_sign_up"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:text="Sign up"
+        android:textColor="#FF5722"
+        android:textSize="34sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:textColor="#fff"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:hint="Password"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:text="Sign up"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="#F44336"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:text="Đã có tài khoản ?"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMoveToLogin"
+            android:layout_gravity="center"
+            android:background="#00BCD4"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:text="Log in"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ggLogo"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/google_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+        <ImageView
+            android:id="@+id/fbLogo"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/facebook_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

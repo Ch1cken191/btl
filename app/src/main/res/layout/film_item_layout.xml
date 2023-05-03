@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:padding="20dp"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <LinearLayout
+        android:weightSum="3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:minWidth="100dp"
+            android:minHeight="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/filmAvatar"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/one_piece"
+                android:layout_width="100dp"
+                android:layout_height="70dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/filmName"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Nguoi nghien song luong thien"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                android:id="@+id/filmDirector"
+                android:text="Thang Hoang"
+                android:textColor="#000"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/filmDuration"
+                android:text="105p"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/filmReleaseDate"
+                android:text="12-02-2023"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

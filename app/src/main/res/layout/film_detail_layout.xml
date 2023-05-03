@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#252121"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/filmAvatarDetail"
+        android:layout_gravity="center"
+        android:src="@drawable/one_piece"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <Button
+        android:id="@+id/watchMovieBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Xem Phim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleFilmName"
+
+                android:text="Tên phim :"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/filmNameDetail"
+                android:layout_marginLeft="10dp"
+                android:text="Ngay mai anh đến"
+                android:textStyle="normal"
+                android:textColor="#009688"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleFilmDirector"
+                android:text="Đạo diễn :"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/filmDirectorDetail"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:text="Thang Hoang"
+                android:textStyle="normal"
+                android:textColor="#009688"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleFilmNation"
+                android:text="Quoc gia :"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/filmNationDetail"
+                android:layout_marginLeft="10dp"
+                android:text="Viet Nam"
+                android:textStyle="normal"
+                android:textColor="#009688"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleFilmCategory"
+                android:text="Thể loại :"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/filmCategoryDetail"
+                android:layout_marginLeft="10dp"
+                android:text="Tình cảm lạnh"
+                android:textStyle="normal"
+                android:textColor="#009688"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleFilmDuration"
+                android:text="Thời lượng :"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/filmDurationDetail"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:text="108p"
+                android:textStyle="normal"
+                android:textColor="#009688"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleFilmReleaseDate"
+                android:text="Thời lượng :"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/filmReleaseDateDetail"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:text="108p"
+                android:textStyle="normal"
+                android:textColor="#009688"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/filmDescriptionDetail"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:text="Nghe Nói Em Thích Tôi - Love Heals được chuyển thể từ tiểu thuyết nổi tiếng cùng tên của nhà văn Cát Tường Dạ, kể lại câu chuyện gương vỡ lại lành của đôi chính Ninh Chí Khiêm và  Nguyễn Lưu Tranh. Sau 7 năm xa nhà, Nguyễn Lưu Tranh trở về quê và trở thành bác sĩ thực tập khoa Thần Kinh của bệnh viện Bắc Nhã. Ở đây cô gặp lại chồng cũ mình - Ninh Chí Khiêm là một trong những bác sĩ giỏi nhất của bệnh viện. Anh chủ động làm cố vấn cho cô, xem như là sự bù đắp cho hôn nhân thất bại mà anh gây ra. Còn Nguyễn Lưu Tranh cũng không còn nhút nhát, yếu đuối như xưa. Sau nhiều năm, hai người giờ đây đã trưởng thành hơn cùng với quá trình làm việc chung đã giúp những hiểu lầm, khúc mắc năm xưa được gỡ bỏ và cho nhau cơ hội bắt đầu một mối quan hệ mới."
+                android:textStyle="normal"
+                android:textColor="#CDDC39"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

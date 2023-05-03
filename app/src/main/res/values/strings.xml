@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Btl</string>
+    <string name="horrified_category">Kinh Dị</string>
+    <string name="emotional_category">Tình Cảm</string>
+    <string name="adult_category">18+</string>
+    <string name="humorous_category">Hài Hước</string>
+    <string name="action_category">Hành Động</string>
+    <string name="family_category">Gia Đình</string>
+    <string name="kids_category">Thiếu Nhi</string>
+    <string name="anime_category">Anime</string>
+    <string name="all_category">Tất cả</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/all_catogory" android:title="@string/all_category"/>
+    <item android:id="@+id/action_category" android:title="@string/action_category"/>
+    <item android:id="@+id/family_category" android:title="@string/family_category"/>
+    <item android:id="@+id/humorous_category" android:title="@string/humorous_category"/>
+    <item android:id="@+id/emotional_category" android:title="@string/emotional_category"/>
+    <item android:id="@+id/horrified_category" android:title="@string/horrified_category"/>
+    <item android:id="@+id/anime_category" android:title="@string/anime_category"/>
+    <item android:id="@+id/kids_category" android:title="@string/kids_category"/>
+    <item android:id="@+id/adult_category" android:title="@string/adult_category"/>
+</menu>
