@@ -11,7 +11,7 @@ public class Film {
     private String description;
 
 
-    public Film(String id, String name, String director, String duration, String releaseDate, String category, String nation) {
+    public Film(String id, String name, String director, String duration, String releaseDate, String category, String nation,String description) {
         this.id = id;
         this.name = name;
         this.director = director;
@@ -19,6 +19,7 @@ public class Film {
         this.releaseDate = releaseDate;
         this.category = category;
         this.nation = nation;
+        this.description=description;
     }
 
     public String getId() {
@@ -75,6 +76,14 @@ public class Film {
 
     public void setNation(String nation) {
         this.nation = nation;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override

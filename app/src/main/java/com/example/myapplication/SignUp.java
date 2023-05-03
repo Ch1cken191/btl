@@ -18,7 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUp extends AppCompatActivity {
-    private EditText accountedit,emailedit,passwordedit,RetypepasswordEdit;
+    private EditText emailedit,passwordedit,RetypepasswordEdit;
     private Button btnLogin, btnRegister;
     private FirebaseAuth auth;
     @SuppressLint("MissingInflatedId")
@@ -30,6 +30,7 @@ public class SignUp extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
         emailedit=findViewById(R.id.edtEmail);
         passwordedit = findViewById(R.id.edtPassword);
+        RetypepasswordEdit = findViewById(R.id.edtRetypePassword);
         btnLogin = findViewById(R.id.btnMoveToLogin);
         btnRegister = findViewById(R.id.btnSignUp);
 
@@ -51,9 +52,10 @@ public class SignUp extends AppCompatActivity {
         });
     }
     private void Register() {
-        String email,password;
+        String email,password,RetypePassword;
         email=emailedit.getText().toString();
         password=passwordedit.getText().toString();
+        RetypePassword =RetypepasswordEdit.getText().toString();
         if(TextUtils.isEmpty(email)){
             Toast.makeText(this,"Input Email",Toast.LENGTH_SHORT).show();
             return;
@@ -63,21 +65,30 @@ public class SignUp extends AppCompatActivity {
             Toast.makeText(this,"Input Password",Toast.LENGTH_SHORT).show();
             return;
         }
+        if(TextUtils.isEmpty(RetypePassword)){
+            Toast.makeText(this,"Input RetypePassword",Toast.LENGTH_SHORT).show();
+        }
+        if(RetypePassword.equals(password)==false){
+            Toast.makeText(this,"Please Input RetypePassword",Toast.LENGTH_SHORT).show();
+        }else{
+            auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if(task.isSuccessful()){
+                        Toast.makeText(getApplicationContext(),"Register SuccessFull",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(SignUp.this,Login.class);
+                        startActivity(intent);
+                        finish();
 
-        auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(getApplicationContext(),"Register SuccessFull",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SignUp.this,Login.class);
-                    startActivity(intent);
-                    finish();
-
-                }else{
-                    Toast.makeText(getApplicationContext(),"Register Faile",Toast.LENGTH_SHORT).show();
+                    }else{
+                        Toast.makeText(getApplicationContext(),"Register False",Toast.LENGTH_SHORT).show();
+                    }
                 }
-            }
-        });
+            });
+
+        }
+
+
     }
     private void DangNhap() {
         Intent intent = new Intent(SignUp.this, Login.class);

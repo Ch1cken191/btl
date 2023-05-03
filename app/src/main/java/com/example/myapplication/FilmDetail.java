@@ -40,13 +40,15 @@ public class FilmDetail extends AppCompatActivity {
         ImageView avatar = findViewById(R.id.filmAvatarDetail);
         String url = "https://img.youtube.com/vi/" + list.get(0) + "/sddefault.jpg";
         Picasso.get().load(url).into(avatar);
-        TextView filmNameDetail,filmNationDetail,filmCategoryDetail,filmDurationDetail,filmDirectorDetail,filmReleaseDateDetail;
+        TextView filmNameDetail,filmNationDetail,filmCategoryDetail,filmDurationDetail,filmDirectorDetail,filmReleaseDateDetail,filmDescriptionDetail;
         filmNameDetail = findViewById(R.id.filmNameDetail);
         filmNationDetail = findViewById(R.id.filmNationDetail);
         filmCategoryDetail = findViewById(R.id.filmCategoryDetail);
         filmDurationDetail = findViewById(R.id.filmDurationDetail);
         filmDirectorDetail = findViewById(R.id.filmDirectorDetail);
         filmReleaseDateDetail = findViewById(R.id.filmReleaseDateDetail);
+        filmDescriptionDetail= findViewById(R.id.filmDescriptionDetail);
+
 
         filmNameDetail.setText(list.get(1).toString());
         filmDirectorDetail.setText(list.get(2).toString());
@@ -54,6 +56,7 @@ public class FilmDetail extends AppCompatActivity {
         filmNationDetail.setText(list.get(4).toString());
         filmCategoryDetail.setText(list.get(5).toString());
         filmReleaseDateDetail.setText(list.get(6).toString());
+        filmDescriptionDetail.setText(list.get(7).toString());
 
     }
 

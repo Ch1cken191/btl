@@ -24,8 +24,6 @@
         android:layout_height="wrap_content">
 
 
-
-
         <EditText
             android:id="@+id/edtEmail"
             android:textColor="#fff"
@@ -52,9 +50,21 @@
             android:drawablePadding="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtRetypePassword"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:hint="RetypePassword"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignUp"
         android:text="Sign up"

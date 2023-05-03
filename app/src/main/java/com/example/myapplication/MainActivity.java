@@ -48,9 +48,29 @@ public class MainActivity extends AppCompatActivity {
 
 //        filmList.add(new Film("bxEw6yJBeL0",))
 //        filmList.add(new Film("I3S_CBJgwbs","https://img.youtube.com/vi/I3S_CBJgwbs/sddefault.jpg","Người Rơi","Thang Hoang","250p","10/02/2023","Hành Động","Anh"));
-        filmList.add(new Film("I3S_CBJgwbs", "3 chú lợn con","Thang Hoang","250p","10/02/2023","Thiếu Nhi","Mỹ"));
-        filmList.add(new Film("dGNmaN1CI9Q", "cay hai","Thang Hoang","250p","10/02/2023","Thiếu Nhi","Mỹ"));
-        filmList.add(new Film("dGNmaN1CI9Q", "thinh nghien","Thang Hoang","250p","10/02/2023","hai huoc","Mỹ"));
+        filmList.add(new Film("B1tFAPVIG8c", "Máy Bay Mất Tích","Jeff Rake","180p","11/07/2015","Kinh dị","Mỹ","Phim rất hay"));
+        filmList.add(new Film("vmM2RbRzRUM", "Phép màu đã cho ta gặp nhau","Kim Hyun Joo","200p","10/02/2023","Tình Cảm","Hàn Quốc",""));
+        filmList.add(new Film("egwCJMkFmHU", "Big Mouth","Oh Choong Hwan","220p","04/06/2021","Hành Động","Hàn Quốc",""));
+        filmList.add(new Film("cwI_1BA8GsI", "Vượt Ngục","Thang Hoang","250p","16/10/2019","Hành Động","Mỹ",""));
+        filmList.add(new Film("3EMLAGgN7b0", "Quái xế","Edgar Wright","120p","18/6/2017","Hành Động","Vương Quốc Anh",""));
+        filmList.add(new Film("nCoBpyj7qz4", "John weak","Chad Stahelski","180p","24/03/2023","Hành Động","Mỹ",""));
+        filmList.add(new Film("Qt7OgOB_TVU", "hành tinh khỉ","Matt Reeves","188p","11/07/2014","Kinh dị","Mỹ",""));
+        filmList.add(new Film("X-ZxnHqpnaI", "Safe","Boaz Yakin","256p","18/01/2021","Gia Đình","Trung Quốc",""));
+        filmList.add(new Film("p32dUJrpZ1I", "Điều kì ờ phòng giam số 7","Oh Dal-su","192p","10/06/2013","Tình Cảm","Hàn Quốc",""));
+        filmList.add(new Film("8GEzNGcP1JA", "Mùa Hè Yêu Dấu Của Chúng Ta","Choi Woo Sik","128p","02/03/2021","Tình Cảm","Hàn Quốc",""));
+        filmList.add(new Film("sVS_9dtmfmE", "Hạ Cánh Nơi Anh","Hyun Bin","1080p","19/02/2020","Hài Hước","Mỹ",""));
+        filmList.add(new Film("YN6E-9aDzic", "One Piece","Konosuke Uda","526p","20/10/1999","Anime","Nhật Bản",""));
+        filmList.add(new Film("HeZPEq6eJd0", "Cửu Vĩ Hồ","Kishimoto Masashi","2160p","3/10/2002","Anime","Nhật Bản",""));
+        filmList.add(new Film("9JWyhyA8wug", "Đại Chiến TiTan","Shinji Higuchi","720p","7/4/2013","Anime","Nhật Bản",""));
+        filmList.add(new Film("qY_tEXxgJg8", "Điện thoại Đen","Scott Derrickson","102p","23/06/2022","Kinh dị","Mỹ",""));
+        filmList.add(new Film("f-SgRsJ9tt4", "Ma Gương 3","Rizal Mantovani","105p","02/12/2010","Kinh dị","Mỹ",""));
+        filmList.add(new Film("KxMMYKkVbwA", "Halloween chết chóc","David Gordon Green","146p","16/10/2021","Kinh DỊ","Mỹ",""));
+        filmList.add(new Film("hJofTkJFW3g", "Lưu Manh Đổi đời","Cao Hiểu Phàn","218p","29/11/2015","Hài Hước","Trung Quốc",""));
+        filmList.add(new Film("_waP3LkdzuA", "Tân Ô Long Viện","Chu Diên Bình","170p","19/03/2012","Hài Hước","Trung Quốc",""));
+        filmList.add(new Film("92a7Hj0ijLs", "Hàng Xóm của tôi là TotoRo","Hayao Miyazaki","86p","01/06/1988","Thiếu Nhi","Nhật Bản",""));
+        filmList.add(new Film("rkKaYQU6vCw", "Vút Bay","Pete Docter","96p","01/06/2000","Thiếu Nhi","Mỹ",""));
+
+
         filmAdapter = new FilmAdapter(MainActivity.this,R.layout.film_item_layout,filmList);
         listView.setAdapter(filmAdapter);
 
@@ -178,6 +198,7 @@ public class MainActivity extends AppCompatActivity {
         filmDetail.add(film.getNation());
         filmDetail.add(film.getReleaseDate());
         filmDetail.add(film.getCategory());
+        filmDetail.add(film.getDescription());
         intent.putStringArrayListExtra("film", filmDetail);
         startActivity(intent);
     }
